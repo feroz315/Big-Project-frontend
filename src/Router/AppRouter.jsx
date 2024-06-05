@@ -13,13 +13,11 @@ function AppRouter() {
     <>
     <Routes>
 
-
       <Route path='/signup' element={<SignUp />} />
       <Route path='/login' element={<SignIn />} />
       <Route path='/' element={<Dashboard />} />
       <Route path='/details/:id' element={<Details />} />
       <Route path='/cart' element={<CartScreen />} />
-
 
     </Routes>
 

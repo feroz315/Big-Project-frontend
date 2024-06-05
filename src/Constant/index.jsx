@@ -1,2 +1,2 @@
 export const BASE_URL =
- "https://tiny-erin-kingfisher-kit.cyclic.app/api"; 
+ "https://big-project-omega.vercel.app/api"; 

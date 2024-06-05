@@ -37,15 +37,14 @@ function Copyright(props) {
 const defaultTheme = createTheme();
 
 export default function SignUp() {
-// const Auth = FirebaseAuth;
-// const navigate = useNavigate();
-
 
 const [ email,setEmail ] = useState('');
 const [ password,setPassword ] = useState('');
 const [ firstname,setFirstname ] = useState('');
 const [ lastname,setLastname ] = useState('');
+
 const navigate = useNavigate();
+
 
  const handleSubmit = async(event) => {
    
@@ -63,9 +62,12 @@ const navigate = useNavigate();
      console.log("respone",response);
      if (response.data.status) {
       Toast(response.data.message, "success");
+     
       navigate("/login")
-      } else {
-      Toast(response.data.message, "error");
+      
+     } else {
+      
+        Toast(response.data.message, "error");
     }
 } catch (error) {
   Toast(error.message,"error")
